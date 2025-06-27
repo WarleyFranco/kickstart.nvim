@@ -2,4 +2,12 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'Mofiqul/dracula.nvim',
+    config = function()
+      vim.cmd.colorscheme 'dracula'
+    end,
+  },
+  { 'dmmulroy/ts-error-translator.nvim' },
+}
